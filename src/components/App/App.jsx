@@ -23,7 +23,7 @@ export const App = () => {
     if (storedContacts !== null) {
       setContacts(storedContacts);
     }
-  }, []);
+  }, [setContacts]);
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
